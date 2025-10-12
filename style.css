@@ -4,9 +4,8 @@ padding: 10pX 20px;
 zoom: 4%;
 }
 body{
-    background: black;
+    background:rgb(224, 200, 200) ;
    color:black;
-   bacground-color: rb(251, 247, 242);
     font-size: 18px;
     background-image:url(images/background.png.jpg);
     background-position: center;
@@ -339,3 +338,4 @@ footer{
     
    
 }
+
