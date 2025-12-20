@@ -1,305 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg"  href="images/evans.logo.jpg">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-    
-</head>
-    <body>
-        <!--------header file-->
-<header id="heading">
-<div id="logo">
-    <a href="index.html">
-        <img  src="images/evans.logo.jpg" alt="Logo">
-        
-    </a>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evans - Frontend Developer</title>
 
-<nav id="contols">
-        <a href="">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#services">SERVICES</a>
-        <a href="#my_work">MY WORK</a>
-        <a href="#contact">CONTACT</a>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-</nav>
-</header>
-<!--------welcome message-->
-<div id="welcome_massage">
-    <p>welcome to  my portfolio</p>
-</div>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<div id="profile">
-<h2 >Hi, i'm <b style="color:rgb(8, 8, 253); font-size: 130%;">Evans</b><br />   A software developer.</h2>
-</div>
-<hr>
+  <body data-theme="light">
+    <header class="header" id="navbar">
+      <div class="container nav-wrapper">
+        <!-- logo -->
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.jpg" alt="Logo" />
+        </a>
 
-<!--------about------------>
-                           <div id="about">
-                           <div class="container">
-                         <div class="rows">
-                         <div class="about-col-1">
-                         <img src="images/profile_img.jpg" alt="profile image">
-                         </div>
-                         <div class="about-col-2">
-                         <h2 class="sub-title" > About me</h2>
-                         <P>I am an undergraduate student (second year) in Kirinyaga University pursuing a degree in Bachelor of Science in Information Technology. The school is located in Kutus Kirinyaga county.
-                             I’ve also learned through Power Learn Project Africa where I have gained more knowledge in software engineering essentials.
-                         </P>
-                         <section class="tab1">
-                         <div class="tab-titles">
-                            <div>
-                            <p class="tab-links">Skills</p>
-                            <div class="tab-links-active-tabs1">
-                                Programming: I’m a skilled programmer and skilled with the following
-                                programming languages:
-                                <ol>
-                                 <li>Python</li>
-                                 <li>Javascript</li>
-                                 <li>C</li>
-                                 <li>c#</li>
-                               </ol>
-                                Under web development I have HTML and CSS knowledge.
-                                On the database side I have knowledge and skills on the following languages
-                               MySQL
-                               Mongo DB
-                               <br>
-                               • Software: I’m also skilled in software environment such as:
-                               Windows installation
-                               Windows activation
-                               Office installation and activation
-                               Internet troubleshooting and installation
-                               <br>
-                               • Web development: I’m also a skilled web designer and developer.
-                               <br>
-                               • Networking: I have learnt computer networks as a unit from school but I have
-                               also gained more knowledge from places like Microsoft learn and Cisco.
-                               <br>
-                               • Cyber security: from the networking basics, I was able to learn cyber security
-                               through the ICT Authority of kenya.
-                            </div>
-                           </div>
-                           <div>
-                            <p class="tab-links">Experience</p>
-                            <div class="tab-links-active-tabs2">
-                                
-                                 April 2021 to 28TH February 2023: Foresight Motors limited (Worked as Finance and Administrator) <br>
-                                 DUTY <br>
-                                 •	Processing of invoices.  <br>
-                                 •	Preparations of budgets. <br>
-                                 •	Managing records and receipts.
-                                 •	Reconciling daily, monthly and yearly transactions. <br>
-                                 •	Preparation of balance sheets. <br>
-                                 •	Developing an in-depth knowledge of organizational products and processes. <br>
-                                 •	Making payments to service providers. <br>
-                                 •	Filling the organization’s Value Added Tax (VAT) returns. <br>
-                                  </div>
-                                  </div>
-                            <div>
-                            <p class="tab-links">Education</p>
-                            <div class="tab-links-active-tabs3">I am an undergraduate student (first year) in Kirinyaga University pursuing a degree in
-                                Bachelor of Science in Information Technology. <br>
-                                The school is located in Kutus Kirinyaga
-                                county. <br>
-                                I’ve also learned through Power Learn Project Africa where I have gained more
-                                knowledge in software engineering essentials.
-                            </div>
-                           </div>
-                         </div>
-                         </div>
-                            
-                            
-                           
-                    </div>
-                    </div>
+        <!-- hamburger -->
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+
+        <!-- links -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#hero" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+            <!-- theme switch -->
+            <li>
+              <button
+                id="theme-toggle"
+                class="theme-btn"
+                aria-label="toggle theme"
+              >
+                <i class="fa-solid fa-circle-half-stroke"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section id="hero" class="hero section">
+        <div class="container hero__grid">
+          <div>
+            <h1 class="hero__title">
+              Hi, I'm <span class="accent">Evans</span>
+            </h1>
+            <p class="hero__subtitle">Frontend Developer &amp; UI Enthusiast</p>
+            <a href="#projects" class="btn btn--primary">View my work</a>
+          </div>
+          <div class="hero__img-wrapper">
+            <img
+              src="assets/images/profile_1.jpg"
+              alt="Evans"
+              class="hero__img"
+            />
+          </div>
         </div>
-    </div>
-</div>
-</section>
-<!---------services-->
-<hr>
-<div id="services">
- <h1>SERVICES</h1>
- 
-    <div class="rows">
-       
-        <div class="about-col-2">
-            <P>With my diverse skill set in programming, web development, networking, and cybersecurity, I am well-equipped to offer a wide range of technology services tailored to both individuals and businesses. </P>
-<h4>🖥️ Programming Services</h4>
-<ul>
-    <li>Develop custom desktop and web-based applications using Python, JavaScript, C, and C#</li>
-     <li>Create automation scripts and tools to simplify repetitive tasks and improve efficiency</li>
-      <li>Build and integrate APIs for system communication and data exchange</li>
-       <li>Offer software troubleshooting and debugging services</li>
-</ul>
-<br>
+      </section>
 
-<h4>🌐 Web Development & Design</h4>
-<ul>
-    <li>Design and develop responsive, user-friendly websites using HTML and CSS</li>
-    <li>Build dynamic and database-driven web applications using MySQL or MongoDB</li>
-    <li>Provide website maintenance, updates, and optimization services</li>
-    <li>Redesign or improve existing websites for better performance and appearance</li>
-</ul>
-<br>
-
-<h4>🖥️ Software & IT Support</h4>
-<ul>
-    <li>Install and activate Windows operating systems</li>
-    <li>Install and activate Microsoft Office suites</li>
-    <li>Offer internet installation and troubleshooting services</li>
-    <li>Provide system setup, configuration, and maintenance for individuals or businesses</li>
-</ul>
-<br>
-<h4>🌐 Networking Services</h4>
-<ul>
-    <li>Design, install, and maintain computer networks (LAN/WAN)</li>
-    <li>Configure and troubleshoot routers, switches, and network connections</li>
-    <li>Offer network performance optimization and basic security configuration</li>
-    <li>Provide small office/home network setup and support</li>
-</ul>
-
-                </div>
-                
-                <div class="about-col-1">
-                    <img src="images/evans.canva.jpg" alt="evans image">
-                </div>
-    </div>
-
- </div>
-</div>
-<hr>
-
-<!----------my work-->
-<section>
-<div id="my_work">
-    <h1>MY WORK</h1>
-     
-                           <div class="container">
-                         <div class="rows">
-                         <div class="about-col-1">
-                         <img src="images/workstation2.png.jpg" alt="work station2 image`">
-                         </div>
-                         <div class="about-col-2">
-                         <h2 class="sub-title" >MY work</h2>
-                         <P>I help individuals and businesses thrive by solving their technology challenges.
-                             From developing custom software that streamlines your workflow to providing the hands-on IT support you need to stay productive, my focus is on delivering results.
-                             With a strong foundation in both software engineering and secure networking, I am your single point of contact for robust, reliable, and secure tech services. <br>
-                              Explore my services to see how I can help you:
-                         </P>
-
-<!-----my work links-->
-                         <section class="tab1">
-                         <div class="tabs-titles">
-                           <div>
-                            <p class="tabs-links">Fullstack development</p>
-                            <div class="tabs-links-active-tabs">
-                                <a href="https://shorturl.at/ZFCJd"><img src="images/fullstack-dev.jpg.jpg" alt=""></a>
-                                <p>
-                                    I’m a full-stack developer creating responsive, dynamic web applications with modern front-end and back-end technologies. 
-                                    Explore my projects to see efficient, creative, and user-focused digital solutions
-                                </p>
-                              
-                              
-                               <div>
-                                <a id="decos" href="https://shorturl.at/ZFCJd">VISIT MY PROJECT</a>
-                            </div>
-                            </div>
-                            </div>
-                           
-                           
-                           <div>
-                            <p class="tabs-links">Mobile Development</p>
-                            <div class="tabs-links-active-tabs">
-                                <a href="https://shorturl.at/ZFCJd"><img src="images/appdevelopment.jpg" alt=""></a>
-                                
-                                  <p>
-                                     I’m a mobile app developer creating responsive, high-performance applications for Android and iOS.
-                                      Explore my projects to see seamless, user-friendly, and innovative mobile solutions in action.
-                                </p>
-                              
-                                 <div>
-                                <a id="decos" href="https://shorturl.at/ZFCJd">VISIT MY PROJECT</a>
-                                 </div>
-                                  </div>
-                                  </div>
-                             
-                            <div>
-                            <p class="tabs-links">Networking services</p>
-                            <div class="tabs-links-active-tabs">
-                                <a href="https://shorturl.at/ZFCJd"><img src="images/Networking-Services.jpg.jpg" alt=""></a>
-                                 <p>
-                                     I provide reliable networking services, including setup, configuration, and troubleshooting.
-                                      Explore my work to see secure, efficient, and well-structured network solutions for homes and businesses.
-                                </p>
-                               <div>
-                                <a id="decos" href="https://shorturl.at/ZFCJd">VISIT MY PROJECT</a>
-                            </div>
-                            </div>
-                           </div>
-                         </div>
-                         </div>
-                          </div>
-                          </div>
-                            
-                            
-                           
-                   
-                    </div>
-        </div>
-    </div>
-</div>
-    
-</div>
-</section>
-<hr>
-<!--------contact-->
-
-<div id="contact">
-    <div class="container">
-        <div id="rows">
-            <div class="content-left">
-                <h1 class="sub-title">CONTACT</h1>
-                <p>contactexample@gmail.com</p>
-                <p>+254012346789</p>
-                <div class="social-icons">
-               <a href=""><i class="fab fa-linkedin"></i></a>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-whatsapp"></i></a>
-
-                </div>
-                  
+      <!-- about -->
+      <section id="about" class="about section">
+        <div class="container">
+          <h2 class="section__title reveal">About me</h2>
+          <div class="about__grid">
+            <div class="about__photo reveal">
+              <img src="assets/images/profile_3.jpg" alt="About picture" />
             </div>
-            <div class="content-right">
-                <form action="">
-                 <input type="text" name="NAME" placeholder="Your name" required>
-                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your message"  rows="10"></textarea>
-                <button type="submit" onclick="greet()">submit</button>
-                </form>
-         
+            <div class="about__text reveal">
+              <p>
+                I’m an undergraduate IT student at Kirinyaga University and an
+                alumnus of Power Learn Project Africa. I love turning ideas into
+                clean, efficient code and crafting experiences that look great
+                on every screen.
+              </p>
+
+              <ul class="about__skills">
+                <li>Problem solving</li>
+                <li>Responsive web design</li>
+                <li>Team collaboration</li>
+                <li>Quick learner</li>
+              </ul>
+              <a href="assets/cv.pdf" target="_blank" class="btn btn--outline"
+                >Download CV</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
+      <!-- projects -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <h2 class="section__title reveal">Projects</h2>
 
-<!-----footer-->
-<footer >
-    <p class="production">All right reserved<br>|2024|</p>
-</footer>
-<script src="evanso.js"></script>
+          <div class="projects__grid">
+            <!-- Project 1 -->
+            <article class="project-card reveal">
+              <img
+                src="assets/projects/portfolio.png"
+                alt="Project 3"
+                class="project-card__img"
+              />
+              <div class="project-card__body">
+                <h3 class="project-card__title">Portfolio Website</h3>
+                <p>HTML / CSS / Vanilla JS</p>
+                <p class="project-card__desc">
+                  Clean, minimal portfolio with smooth scroll and dark-mode
+                  toggle.
+                </p>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://github.com/Evans2004k"
+                  target="_blank"
+                  class="btn btn--small"
+                  >View project</a
+                >
+              </div>
+            </article>
 
-</body>
+            <!-- Project 2 -->
+            <article class="project-card reveal">
+              <img
+                src="assets/projects/project_2.jpg"
+                alt="Project 2"
+                class="project-card__img"
+              />
+              <div class="project-card__body">
+                <h3 class="project-card__title">Task Manager App</h3>
+                <p>Vue / Firebase</p>
+                <p class="project-card__desc">
+                  Real-time task board with drag-and-drop, auth and cloud
+                  storage.
+                </p>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://github.com/Evans2004k"
+                  target="_blank"
+                  class="btn btn--small"
+                  >View project</a
+                >
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal">
+              <img
+                src="assets/projects/project_1.jpg"
+                alt="Project 1"
+                class="project-card__img"
+              />
+              <div class="project-card__body">
+                <h3 class="project-card__title">E-Commerce Storefront</h3>
+                <p>React / Redux / Tailwind</p>
+                <p class="project-card__desc">
+                  A fully-responsive online shop with cart, checkout and payment
+                  integration.
+                </p>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://github.com/Evans2004k"
+                  target="_blank"
+                  class="btn btn--small"
+                  >View project</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section id="skills" class="skills section">
+        <div class="container">
+          <h2 class="section__title reveal">Technical skills</h2>
+
+          <div class="skills__grid">
+            <div class="skill reveal">
+              <p class="skill__label">HTML/CSS</p>
+              <div class="skill__bar"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <p class="skill__label">JavaScript</p>
+              <div class="skill__bar"><span data-width="85%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <p class="skill__label">React</p>
+              <div class="skill__bar"><span data-width="80%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <p class="skill__label">Python</p>
+              <div class="skill__bar"><span data-width="75%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <p class="skill__label">Git/Github</p>
+              <div class="skill__bar"><span data-width="88%"></span></div>
+            </div>
+            <div class="skill reveal">
+              <p class="skill__label">UI Design</p>
+              <div class="skill__bar"><span data-width="70%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <h2 class="section__title reveal">Get in touch</h2>
+
+          <div class="contact__grid">
+            <div class="contact__info reveal">
+              <p>Want to work together or just say hi? Drop a message.</p>
+
+              <ul class="contact__list">
+                <li><i class="fa-solid fa-envelope"></i> evans@example.com</li>
+                <li><i class="fa-solid fa-phone"></i> +254 712 345 678</li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Kirinyaga, Kenya
+                </li>
+              </ul>
+
+              <div class="social">
+                <a
+                  rel="noopener noreferrer"
+                  href="https://github.com/Evans2004k"
+                  target="_blank"
+                  aria-label="github"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  aria-label="linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="mailto:evans@example.com" aria-label="email"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+
+            <form class="contact__form reveal" id="contact-form">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn--primary">
+                Send message
+              </button>
+              <p class="msg-sent hidden">Thanks! I’ll reply ASAP.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Evans. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="script/script.js"></script>
+  </body>
 </html>
-
-
-
-
