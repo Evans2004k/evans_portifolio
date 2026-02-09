@@ -30,6 +30,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  zoom: 120%;
   font-family: var(--font-main);
   background: var(--clr-bg);
   color: var(--clr-text);
@@ -207,8 +208,8 @@ textarea {
 
 /* hero section */
 .hero {
-  padding-top: 140px;
-  min-height: 100vh;
+  padding-top: 100px;
+  min-height: 75vh;
   display: grid;
   place-content: center;
 }
@@ -233,6 +234,7 @@ textarea {
   border-radius: var(--radius);
   max-height: 400px;
   object-fit: cover;
+  margin-left: 40px;
 }
 
 /* about section */
@@ -256,6 +258,9 @@ textarea {
   border-radius: var(--radius);
   font-size: 0.875rem;
   font-weight: 500;
+}
+.about__skills li:hover{
+  background-color: #6963ec;
 }
 
 /* project section */
@@ -364,10 +369,10 @@ textarea {
   color: var(--clr-text);
 }
 .contact__form button {
-  align-self: flex-start;
+  align-self: center;
 }
 .msg-sent {
-  color: green;
+  color: rgb(116, 226, 116);
   font-size: 0.9rem;
 }
 
